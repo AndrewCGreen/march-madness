@@ -1,0 +1,19 @@
+#!/bin/bash
+set -e
+if [ -z $MMPATH]; then
+    echo "The MMPATH environment variable must be set for the environment script to work."
+    echo "Please set 'export MMPATH=<path to march-madness repo>' before continuing"
+    exit 1
+fi
+echo "-> Using MMPATH=$MMPATH"
+cd $MMPATH/codebase
+if [ ! -d "mm_env" ]; then
+    python3 -m venv mm_env 
+fi
+source mm_env/bin/activate
+pip3 install -r deps.txt
+cd soleng
+pip3 install .
+cd ..
+deactivate
+echo "-> Done"
