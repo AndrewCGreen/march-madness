@@ -11,9 +11,9 @@ if [ ! -d "mm_env" ]; then
     python3 -m venv mm_env 
 fi
 source mm_env/bin/activate
-pip3 install -r deps.txt
-cd python 
-pip3 install .
+pip install -r deps.txt
+cd python
+pip install .
 cd ..
 deactivate
 echo "-> Done"
