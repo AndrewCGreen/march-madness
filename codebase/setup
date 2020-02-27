@@ -12,7 +12,7 @@ if [ ! -d "mm_env" ]; then
 fi
 source mm_env/bin/activate
 pip3 install -r deps.txt
-cd soleng
+cd python 
 pip3 install .
 cd ..
 deactivate
