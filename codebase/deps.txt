@@ -1,2 +1,5 @@
 # core
 pandas
+requests
+bs4
+os
