@@ -1,4 +1,4 @@
-## the march madness framework codebase 
+## march-madness framework codebase 
 
 The following will help you get started using the march mandness codebase.
 
