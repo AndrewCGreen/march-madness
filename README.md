@@ -1,4 +1,4 @@
-## March Madness Data Model
+## March Madness Predictive Model
 
 ### Environment
 
