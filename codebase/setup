@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-if [ -z $MMPATH]; then
+if [ -z $MMPATH ]; then
     echo "The MMPATH environment variable must be set for the environment script to work."
     echo "Please set 'export MMPATH=<path to march-madness repo>' before continuing"
     exit 1

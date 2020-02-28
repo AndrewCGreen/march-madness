@@ -9,11 +9,11 @@ Please use the environment specified in codebase
 I think a good place to start is with the data scraped from Kaggle, 
 https://www.kaggle.com/andrewsundberg/college-basketball-dataset/data
 
-I would just plop this in a folder march-madness/data/kaggle-data/for now
+I would just plop this in a folder march-madness/data/kaggle-data/ for now
+In order to get the data for the 2020 season so far, navigate to codebase/data-scrape/ 
+and then run `python Scrape2020.py` upon doing so the file cbb20.csv will appear in `data/kaggle-data/`
 
-Soon I will scrape the 2019-2020 season info and attempt to get it into the same format
-that way we can have some good test data - and actually run the model, lol
-
+I am still looking for more comprehensive datasets, might have to shell out some money for that
 I might need to find a vegas dataset, look at strategy #3 for why
 
 ### Strategy
