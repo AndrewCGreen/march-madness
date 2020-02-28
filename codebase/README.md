@@ -7,7 +7,7 @@ See `ORG.md` for architectural details of this set of Python modules, and how to
 1. The environment variable needed to be set in order for internal modules to work together correctly.
 
 - `MMPATH` = Where the march madness repository lives on your machine
-e.g. `$HOME/Workspace/march-madness/`
+e.g. `export MMPATH="$HOME/Workspace/march-madness"`
 
 Set these in your `.bashrc` or `.zshrc` file, or set them per-session.
 
