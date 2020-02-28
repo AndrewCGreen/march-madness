@@ -1,14 +1,9 @@
 #avoid uploading OS junk files
 *.DS_Store
-
-Ipython checkpoints
 *.ipynb_checkpoints
-
-csv files
 *.csv
-
-excel files
 *.xlsx
-
-zip files
 *.zip
+__pycache__/
+*.swp
+mm_env/
