@@ -8,7 +8,7 @@ fi
 echo "-> Using MMPATH=$MMPATH"
 cd $MMPATH/codebase
 if [ ! -d "mm_env" ]; then
-    python3 -m venv mm_env 
+    python -m venv mm_env 
 fi
 source mm_env/bin/activate
 pip install -r deps.txt
