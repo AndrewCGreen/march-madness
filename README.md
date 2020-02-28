@@ -10,7 +10,7 @@ Please use the environment specified in codebase
 I think a good place to start is with the data scraped from Kaggle, 
 https://www.kaggle.com/andrewsundberg/college-basketball-dataset/data
 
-I would just plop this in a folder march-madness/data/kaggle-data/ for now
+I would just plop this in a folder `march-madness/data/kaggle-data/` for now
 
 #### Kaggle Season 2020:
 In order to get the data for the 2020 season so far, navigate to codebase/data-scrape/ 
