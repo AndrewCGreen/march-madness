@@ -21,5 +21,6 @@ Once these are in place, you can do things like:
 
 5. Edit the `deps.txt` file to pull in or exclude external dependencies
 
+For trouble shooting, try deleting the mm_env directory and runing ./setup again
 
 @andrewcgreen is the primary author of this codebase, and should be notified of bugs/feature requests.
