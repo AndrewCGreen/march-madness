@@ -29,13 +29,13 @@ def build_dataframe(all_lines) -> pd.DataFrame:
            'TORD','ORB','DRB','FTR','FTRD','2P_O','2P_D','3P_O','3P_D','ADJ_T','WAB']
     return pd.DataFrame(all_lines, columns = columns)
 
-def main():
-    url = "http://barttorvik.com/trank.php#"
+def main(url):
     html_lines = pull_html(url)
     all_lines = raw_data_array(html_lines)
     df = build_dataframe(all_lines)
     return df
 
 if __name__ == "__main__":
-    df = main()
+    url = "http://barttorvik.com/trank.php#"
+    df = main(url)
     df.to_csv(mmpath+"/data/kaggle-data/cbb20.csv", index=False)
