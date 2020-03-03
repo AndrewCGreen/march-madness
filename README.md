@@ -13,8 +13,11 @@ https://www.kaggle.com/andrewsundberg/college-basketball-dataset/data
 I would just plop this in a folder `march-madness/data/kaggle-data/` for now
 
 #### Kaggle Season 2020:
-In order to get the data for the 2020 season so far, navigate to codebase/data-scrape/ 
+In order to get the data for the 2020 season so far, navigate to `codebase/data-scrape/` 
 and then run `python Scrape2020.py` upon doing so the file cbb20.csv will appear in `data/kaggle-data/`
+
+#### Historical Bracket Data:
+I colleceted all games in the time period of each march madness tournament, and that can be pulled by running `python Historical-Bracket-Data.py` in `codebase/data-scrape/` this will create a subfolder in your data folder called tournament-results with all results from 2015-1019
 
 #### Other:
 I am still looking for more comprehensive datasets, might have to shell out some money for that
