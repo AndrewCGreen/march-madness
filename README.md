@@ -18,6 +18,7 @@ and then run `python Scrape2020.py` upon doing so the file cbb20.csv will appear
 
 #### Historical Bracket Data:
 I colleceted all games in the time period of each march madness tournament, and that can be pulled by running `python Historical-Bracket-Data.py` in `codebase/data-scrape/` this will create a subfolder in your data folder called `tournament-results` with all results from 2015-1019
+In order to run this you need to install the selenium chrome driver (this assumes you are running google chrome, if not refactor and download the browser driver of your choice) https://sites.google.com/a/chromium.org/chromedriver/home
 
 #### Other:
 I am still looking for more comprehensive datasets, might have to shell out some money for that

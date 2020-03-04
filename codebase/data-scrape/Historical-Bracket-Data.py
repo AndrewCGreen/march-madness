@@ -64,8 +64,10 @@ if __name__ == "__main__":
             2017:"http://barttorvik.com/gamestat.php?sIndex=0&year=2017&tvalue=All&cvalue=All&opcvalue=All&ovalue=All&minwin=All&mindate=03/14/17&maxdate=04/03/17&typev=All&venvalue=All&minadjo=0&minadjd=200&mintempo=0&minppp=0&minefg=0&mintov=200&minreb=0&minftr=0&minpppd=200&minefgd=200&mintovd=0&minrebd=200&minftrd=200&mings=0&mingscript=-100&maxx=100&coach=All&opcoach=All&adjoSelect=min&adjdSelect=max&tempoSelect=min&pppSelect=min&efgSelect=min&tovSelect=max&rebSelect=min&ftrSelect=min&pppdSelect=max&efgdSelect=max&tovdSelect=min&rebdSelect=max&ftrdSelect=max&gscriptSelect=min&sortToggle=0",
             2016:"http://barttorvik.com/gamestat.php?sIndex=0&year=2016&tvalue=All&cvalue=All&opcvalue=All&ovalue=All&minwin=All&mindate=03/15/16&maxdate=04/04/16&typev=All&venvalue=All&minadjo=0&minadjd=200&mintempo=0&minppp=0&minefg=0&mintov=200&minreb=0&minftr=0&minpppd=200&minefgd=200&mintovd=0&minrebd=200&minftrd=200&mings=0&mingscript=-100&maxx=100&coach=All&opcoach=All&adjoSelect=min&adjdSelect=max&tempoSelect=min&pppSelect=min&efgSelect=min&tovSelect=max&rebSelect=min&ftrSelect=min&pppdSelect=max&efgdSelect=max&tovdSelect=min&rebdSelect=max&ftrdSelect=max&gscriptSelect=min&sortToggle=0",
             2015:"http://barttorvik.com/gamestat.php?sIndex=0&year=2015&tvalue=All&cvalue=All&opcvalue=All&ovalue=All&minwin=All&mindate=03/17/15&maxdate=04/06/15&typev=All&venvalue=All&minadjo=0&minadjd=200&mintempo=0&minppp=0&minefg=0&mintov=200&minreb=0&minftr=0&minpppd=200&minefgd=200&mintovd=0&minrebd=200&minftrd=200&mings=0&mingscript=-100&maxx=100&coach=All&opcoach=All&adjoSelect=min&adjdSelect=max&tempoSelect=min&pppSelect=min&efgSelect=min&tovSelect=max&rebSelect=min&ftrSelect=min&pppdSelect=max&efgdSelect=max&tovdSelect=min&rebdSelect=max&ftrdSelect=max&gscriptSelect=min&sortToggle=0"}
-
-    mkdir(mmpath+"/data/tournament-results/")
+    try:
+        mkdir(mmpath+"/data/tournament-results/")
+    except:
+        pass
     for year in tournament_urls:
         df = main(tournament_urls[year])
         df.to_csv(mmpath+"/data/tournament-results/tournament"+str(year)+".csv", index=False)
