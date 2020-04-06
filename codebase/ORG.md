@@ -1,4 +1,4 @@
-`march-madness` - a reusable codebase for SignalFrame Solutions Engineering
+`march-madness` - a reusable codebase for the March Madness Project 
 ---
 
 ## Getting Started
